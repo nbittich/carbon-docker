@@ -6,4 +6,4 @@
 `docker build -t carbon .`
 
 ### run the hello world
-`docker run -v $PWD/hello.carbon:/hello.carbon carbon bazelisk run //explorer -- /hello.carbon`
+`docker run -v $PWD/hello.carbon:/hello.carbon -it  carbon /hello.carbon`
