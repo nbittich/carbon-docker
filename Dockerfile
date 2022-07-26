@@ -28,6 +28,4 @@ WORKDIR /opt/carbon/carbon-lang
 # https://github.com/carbon-language/carbon-lang/tree/trunk/installers/local
 RUN bazel run -c opt //installers/local:install
 
-RUN chmod a+x /usr/lib/carbon
-
 ENTRYPOINT  ["/usr/bin/carbon-explorer"]
