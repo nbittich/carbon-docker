@@ -15,7 +15,7 @@ RUN chmod +x llvm.sh
 RUN apt install -y lsb-release software-properties-common
 RUN ./llvm.sh all
 
-RUN apt-get -y install clang -y
+RUN apt install clang -y
 WORKDIR /opt/carbon
 
 RUN git clone https://github.com/carbon-language/carbon-lang
