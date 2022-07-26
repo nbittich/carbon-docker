@@ -20,9 +20,7 @@ WORKDIR /opt/carbon
 
 RUN git clone https://github.com/carbon-language/carbon-lang
 
-WORKDIR /opt/carbon/carbon-lang
 
 RUN apt install libz-dev -y
-RUN bazel run //explorer -- ./explorer/testdata/print/format_only.carbon
 
-CMD [ "/bin/bash" ]
+WORKDIR /opt/carbon/carbon-lang
